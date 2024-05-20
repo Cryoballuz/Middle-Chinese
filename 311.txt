@@ -100,7 +100,7 @@ function get韻母() {
    if (is('東韻 三等 非 幫組 非 云母')){
 	 元音 = 元音.replace('u','ɯu');
    }
-   元音 = 元音.replace('uu','').replace('ii','i').replace('ɯɯ','ɯ');
+   元音 = 元音.replace('uu','u').replace('ii','i').replace('ɯɯ','ɯ');
    韻尾 = 韻尾.replace(元音.slice(-1), '');
    if (is('二等 或 重紐B類 非 莊組')){
 	if (is('麻銜刪庚肴韻') &&字頭 !== '打'){
