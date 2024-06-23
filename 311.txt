@@ -102,7 +102,7 @@ function get韻母() {
    }
    元音 = 元音.replace('uu','u').replace('ii','i').replace('ɯɯ','ɯ');
    韻尾 = 韻尾.replace(元音.slice(-1), '');
-   if (is('二等 非 莊組')){
+   if (is('二等 非 莊組 非 孃母')){
 	if (is('麻銜刪庚肴韻') &&字頭 !== '打'){
 	  元音 = 元音.replace('a','a˞');
 	}
@@ -122,7 +122,7 @@ function get韻母() {
 	  元音 = 元音.replace('u','u˞');
 	}
    }
-   if (is('重紐B類 非 莊組')){
+   if (is('重紐B類 非 莊組 非 孃母')){
 	if (is('麻銜刪庚肴韻')){
 	  元音 = 元音.replace('a','ɹa');
 	}
