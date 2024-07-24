@@ -100,8 +100,11 @@ function get韻母() {
    if (is('東韻 三等 非 幫組 非 云母')){
 	 元音 = 元音.replace('u','ɯu');
    }
-   if (is('麻韻 三等 非 章組')){
+   if (is('麻韻 三等 非 章組 非 以母')){
 	 元音 = 元音.replace('a','ia');
+   }
+   if (is('魚韻 非 章組 非 以母')){
+	 元音 = 元音.replace('ɤ','iɤ');
    }
    元音 = 元音.replace('uu','u').replace('ii','i').replace('ɯɯ','ɯ');
    韻尾 = 韻尾.replace(元音.slice(-1), '');
