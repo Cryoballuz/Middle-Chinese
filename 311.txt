@@ -84,7 +84,7 @@ function get韻母() {
    if (選項.運用保守的鈍音 == 'p̙/k̙'){
 	  韻尾 = 韻尾.replace('ŋ̙','ŋ').replace('k̙','k');
    }
-   if (元音.includes('a') && is('庚韻 三等 非 莊組')) {
+   if (元音.includes('a') && is('庚韻 三等 非 知莊組')) {
     元音 = 元音.replace('a','ɹa');
    }
    if (is('歌韻 三等')){
@@ -108,7 +108,7 @@ function get韻母() {
    }
    元音 = 元音.replace('uu','u').replace('ii','i').replace('ɯɯ','ɯ');
    韻尾 = 韻尾.replace(元音.slice(-1), '');
-   if (is('二等 非 莊組 非 孃母')){
+   if (is('二等 非 知莊組')){
 	if (is('麻銜刪庚肴韻') &&字頭 !== '打'){
 	  元音 = 元音.replace('a','a˞');
 	}
